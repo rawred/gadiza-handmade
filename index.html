@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no"
+    />
+    <title>TEST BACKUP</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="LMAO.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .bg-custom {
+        background-color: #3b2914;
+      }
+      .img {
+        height: auto;
+        width: 100%;
+        max-width: 65rem;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h6 {
+        color: #3b291496;
+      }
+      .border-start-only {
+        border-left: 2px solid black;
+        padding-left: 15px;
+      }
+      .border {
+        margin: 1rem 0;
+      }
+      .btn-custom {
+        color: #fff;
+        background-color: #3b2914;
+        border-color: #545b62;
+        width: 11rem;
+        height: 4rem; /* Increased height */
+        border-radius: 29px;
+      }
+
+      .btn-custom:hover {
+        color: #fff;
+        background-color: #444950;
+        border-color: #3b3f45;
+      }
+
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
+        .navbar {
+          justify-content: center;
+        }
+        .navbar-collapse {
+          justify-content: center;
+        }
+        .card-deck {
+          flex-direction: column;
+          align-items: center;
+        }
+        .card-deck .card {
+          width: 120px;
+          height: 120px;
+        }
+        .flex-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="0"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.jpg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Parallax Section -->
+    <div class="parallax-container">
+      <div class="overlay d-flex flex-column justify-content-center align-items-center text-center">
+          <h1 class="display-4 text-light">GADIZAH HOMEMADE</h1>
+          <p class="lead text-light">Experience the beauty of handcrafted art like never before</p>
+          <a href="#menu" class="btn btn-outline-light btn-lg mt-3">Explore More</a>
+      </div>
+  </div>
+    
+
+    <!-- Carousel
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.png" class="first d-block w-100" alt="First slide" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.png" class="second d-block w-100" alt="Second slide" />
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.png" class="third d-block w-100" alt="Third slide" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> -->
+
+
+    <!-- About Section -->
+    <br>
+    <section id="about" class="py-3 py-md-5" data-aos="fade-up" data-aos-duration="1000">
+    <section>
+      <div class="container">
+        <img src="img/new_about.png" class="img mx-auto d-block" alt="..." />
+        <br />
+        <br />
+        <br />
+
+        <div class="container ms-2">
+          <div class="flex-container">
+            <h2 data-aos="fade-up" data-aos-duration="1200">
+              Welcome! explore the variety <br />
+              Gadiza handmade unique work <br />
+              which is not small!
+            </h2>
+
+            <div class="border" data-aos="fade-left" data-aos-duration="1300">
+              <div class="border-start-only p-3 ml-4">
+                <h2>20 Juta</h2>
+                <h7>Sayang Mama</h7>
+              </div>
+            </div>
+
+            <div class="border" data-aos="fade-left" data-aos-duration="1500">
+              <div class="border-start-only p-3 ml-4">
+                <h2>15 Juta</h2>
+                <h7>Kasih Ibu</h7>
+              </div>
+            </div>
+          </div>
+
+          <h6 data-aos="fade-up" data-aos-duration="1600">
+            We have been established since 20xx and have accompanied the Indonesian people
+            all the time. With features that invite nostalgia and design
+            which are funny and interesting, our products will not be inferior to products
+            our competitors!
+          </h6>
+        </div>
+
+        <div
+          class="btn-container mt-4 d-flex justify-content-start"
+          data-aos="fade-up"
+          data-aos-duration="1700"
+        >
+          <button type="button" class="btn btn-custom">Sign Up</button>
+          <button type="button" class="btn btn-custom ml-3">Membership</button>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <section id="visi-misi">
+      <div  class="container py-5" data-aos="fade-right" data-aos-duration="1000">
+    <div class="row align-items-center">
+      <!-- Left Column (Text) -->
+      <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About <strong>Gadiza Handmade</strong></h2>
+                    <p>
+                      <strong>Gadiza Handmade</strong> is a business that focuses on making handmade goods and knick-knacks. We create unique and meaningful products, all of which are made with love and attention to detail.
+                    </p>
+                    <div class="more-text" id="moreTextMale">
+                        <p>
+                          <strong>Gadiza Handmade</strong> not only produces quality products, but also contributes greatly to creating jobs for local communities. As our business continues to grow, more job opportunities open up, helping to reduce unemployment and improve the economic well-being of the community.
+                        </p>
+                    </div>
+                    <a class="read-more" id="readMoreLinkMale">Read More</a>
+                </div>
+
+                <div class="col-md-6">
+                    <h2><strong>Gadiza Handmade</strong> Contribution</h2>
+                    <p>
+                      <strong>Gadiza Handmade</strong> also plays an important role in enriching the local economy. By using local materials and involving craftsmen from various backgrounds, we help drive the wheels of the local economy and increase people's income.
+                    </p>
+                    <div class="more-text" id="moreTextFemale">
+                        <p>
+                          Our efforts also encourage sustainable economic growth by creating environmentally friendly products and supporting fair business practices. Thus, <strong>Gadiza Handmade</strong> not only creates products, but also provides a broad positive impact on society.                        </p>
+                    </div>
+                    <a class="read-more" id="readMoreLinkFemale">Read More</a>
+                </div>
+            </div>
+        </div>
+  </section>
+  </section>
+
+<br><br><br>
+
+
+    <!-- Parallax Section 2 -->
+    <div
+      class="parallax"
+      style="background-image: url('img/Our_Product.png')"
+    ></div>
+
+    <!-- MENU -->
+<section id="menu">
+      <div class="menu-container-1">
+          <h2>BEST SELLER <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire " viewBox="0 0 16 16">
+    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+    </svg></h2>
+    
+          <div class="new-carousel">
+              <div class="kartu-container">
+                  <div class="kartu">
+                      <img src="img/menu-1.png" alt="Item 1">
+                      <h3>The Tragic Tale Of Froggo  (1908)</h3>
+                      <p>$4.000.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-2.png" alt="Item 2">
+                      <h3>Japanese lady something</h3>
+                      <p>$500.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-3.png" alt="Item 3">
+                      <h3>Javanese dancer (1900)</h3>
+                      <p>$100.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-4.png" alt="Item 4">
+                      <h3>Cat Yakuza</h3>
+                      <p>$1.000.000.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-5.png" alt="Item 5">
+                      <h3>Fallen Angel</h3>
+                      <p>$???</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-6.png" alt="Item 5">
+                      <h3>Venus</h3>
+                      <p>$300.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-7.png" alt="Item 5">
+                      <h3>Holy Mary</h3>
+                      <p>1.000.000.000.000.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-8.png" alt="Item 5">
+                      <h3>Joan of Arc</h3>
+                      <p>$all of france economy</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-9.png" alt="Item 5">
+                      <h3>Javanese beautiful lady</h3>
+                      <p>$10.000,00</p>
+                  </div>
+                  <div class="kartu">
+                      <img src="img/menu-10.png" alt="Item 5">
+                      <h3>Javanese neighborhood</h3>
+                      <p>$100.000.000,00</p>
+                  </div>
+              </div>
+          </div>
+    
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+
+    <br><br><br>
+    
+<!-- First Collapsible Section -->
+<br>
+<br>
+<br>
+
+<div class="menu-1">
+<img src="img/Group 3.png" class="menu-1 img mx-auto d-block" alt="..." id="toggleBtn1" style="cursor: pointer;" /></div>
+<br><br><br>
+
+<section>
+  <div id="cardSection1" class="collapse">
+  <div class="container-menu">
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/Frida Kahlo En Fieltro_  876.jpeg" alt="Frida Kahlo">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Frida Kahlo</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/Heirloom Wooden Camera Toys.jpeg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Heirloom Wooden Camera</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/Frog Plushie.jpeg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Frog Plushie</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+          <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<br><br>
+<br>
+
+
+
+<!-- Second Collapsible Section -->
+<div class="menu-2">
+<img src="img/Group 4.png" class="img mx-auto d-block" alt="..." id="toggleBtn2" style="cursor: pointer;" /></div>
+<br><br><br>
+
+<!-- The rows and columns for the second section -->
+<section>
+  <div id="cardSection2" class="collapse">
+  <div class="container-menu">
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/Frog1 (1).jpeg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Frog Doll</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/Frog2.jpeg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Frog Painting</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/Frog3.jpeg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Frog Hat</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+          <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<!-- Third Collapsible Section -->
+<div class="menu-3">
+<img src="img/Group 5.png" class="img mx-auto d-block" alt="..." id="toggleBtn3" style="cursor: pointer;" /></div>
+<br><br><br>
+
+<!-- The rows and columns for the third section -->
+<section>
+  <div id="cardSection3" class="collapse">
+  <div class="container-menu">
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/kris.jpeg" alt="Trust & Co.">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Keris [DISPLAY]</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/wayang.jpeg" alt="Tonic">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Indonesian Wayang</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-menu">
+      <div class="card-inner" style="--clr:#fff;">
+        <div class="box">
+          <div class="imgBox">
+            <img src="img/topeng.jpeg" alt="Shower Gel">
+          </div>
+          <div class="icon">
+            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              </span></a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Indonesian Topeng</h3>
+        <p>Fill out the form and the algorithm will offer the right team of experts</p>
+        <ul>
+          <li style="--clr-tag:#d3b19a;" class="branding">branding</li>
+          <li style="--clr-tag:#70b3b1;" class="packaging">packaging</li>
+          <li style="--clr-tag:#d05fa2;" class="marketing">marketing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Parallax Section 2 -->
+    <div class="parallax parallax-2" style="background-image: url('img/faq.png')"></div>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-3 py-md-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+        <div class="row gy-5 gy-lg-0 align-items-lg-center">
+            <!-- Image Section -->
+            <div class="col-12 col-lg-6 faq-image">
+                <img src="img/FAQ-new.png" alt="How can we help you?" loading="lazy">
+            </div>
+            
+            <!-- FAQ Content Section -->
+            <div class="col-12 col-lg-6">
+                <div class="row justify-content-xl-end">
+                    <div class="col-12 col-xl-11">
+                        <h2 class="h1 mb-3 faq-header">How can we help you?</h2>
+                        <p class="lead fs-4 text-light mb-5">
+                            We hope you have found an answer to your question. If you need any help, please search your query on our Support Center or contact us via email.
+                        </p>
+                        
+                        <!-- Accordion -->
+                        <div class="accordion accordion-flush" id="accordionExample">
+                            <!-- Item 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="faq-icon">1</span> How Do I Change My Billing Information?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>To change your billing information, please follow these steps:</p>
+                                        <ul class="ps-3">
+                                            <li>Go to our website and sign in to your account.</li>
+                                            <li>Click on your profile picture in the top right corner and select "Account Settings."</li>
+                                            <li>Under "Billing Information," click on "Edit."</li>
+                                            <li>Make your changes and click on "Save."</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="faq-icon">2</span> How Does the Payment System Work?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A payment system is a way to transfer money from one person or organization to another. It involves banks, credit card companies, and merchants.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span class="faq-icon">3</span> How Do I Cancel My Account?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>To cancel your account, please follow these steps:</p>
+                                        <ul class="ps-3">
+                                            <li>Go to our website and sign in to your account.</li>
+                                            <li>Click on your profile picture in the top right corner and select "Account Settings."</li>
+                                            <li>Scroll to the bottom and click on "Cancel Account."</li>
+                                            <li>Enter your password and click on "Cancel Account."</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Accordion -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section id="testimonials" class="testimonial-section">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+    <div id="testimonial-carousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial">
+            <img src="img/questionable.jpeg" alt="Nick Garold" />
+            <h5>Nick Garold</h5>
+            <p>"Enak sih 100/100"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial">
+            <img src="img/sad.jpeg" alt="McDonald" />
+            <h5>McDonald</h5>
+            <p>"Damn ngengiten senpaiku T-T"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial">
+            <img src="img/Drake x Kendrick 👉🏼👈🏼.jpeg" alt="GigaNick_9A100" />
+            <h5>GigaNick_9A100</h5>
+            <p>"Pilih ini sih, drake approve!"</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <!-- Non-carousel version for desktop and tablets -->
+    <div class="row d-none d-md-flex">
+      <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="testimonial">
+          <img src="img/questionable.jpeg" alt="Nick Garold" />
+          <h5>Nick Garold</h5>
+          <p>"Enak sih 100/100"</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="testimonial">
+          <img src="img/sad.jpeg" alt="McDonald" />
+          <h5>McDonald</h5>
+          <p>"Damn ngengiten senpaiku T-T"</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+        <div class="testimonial">
+          <img src="img/Drake x Kendrick 👉🏼👈🏼.jpeg" alt="GigaNick_9A100" />
+          <h5>GigaNick_9A100</h5>
+          <p>"Pilih ini sih, drake approve!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Parallax Section 2 -->
+    <div
+      class="parallax parallax-3"
+      style="background-image: url('img/contact.png')"
+    ></div>
+
+    <!-- contact -->
+
+    <section id="contact" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10 contact-section">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <h2 class="kelas-location">Our Location</h2>
+                <div id="map" style="height: 400px; width: 100%">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209825.25683426092!2d113.49836701441605!3d34.74250074742054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35d76594f09b6a9d%3A0x7932ee19f4cced2c!2sZhengzhou%2C%20Henan%2C%20Tiongkok!5e0!3m2!1sid!2sid!4v1723797086361!5m2!1sid!2sid"
+                    width="400"
+                    height="350"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- footer -->
+    <section id="footer">
+    <section>
+      <footer class="custom-footer">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h5>Our Mission</h5>
+              <p>
+                At Gadizah-Homemade, our mission is to bring the essence of
+                traditional homemade cooking to your table. We are committed to
+                using the finest ingredients and time-honored recipes to create
+                delicious, heartwarming meals that you and your family will
+                love.
+              </p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5>Contact Us</h5>
+              <p>
+                Email:
+                <a href="mailto:info@gadizah-homemade.com" class="text-white"
+                  >info@gadizah-homemade.com</a
+                >
+              </p>
+              <p>Phone: +123 456 7890</p>
+              <p>Address: 123 Homemade St, Flavor Town</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5>Follow Us</h5>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+              <a href="#" class="text-white"
+                ><i class="fab fa-twitter"></i> Twitter</a
+              >
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <p class="mb-0">
+                &copy; 2024 Gadizah-Homemade. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </section>
+
+    <!-- Include AOS and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init(); // Ensure AOS is initialized
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach((card) => {
+          card.addEventListener("click", function () {
+            const targetId = card.id;
+            if (targetId) {
+              document
+                .getElementById(targetId)
+                .scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      });
+    </script> -->
+
+    <script>
+      let currentIndex = 0;
+const kartuContainer = document.querySelector('.kartu-container');
+const kartu = document.querySelectorAll('.kartu');
+const kartuPerView = 4; // Jumlah kartu yang ingin ditampilkan sekaligus
+const kartuWidth = kartu[0].offsetWidth; // Lebar kartu
+
+function moveSlide(direction) {
+  const maxIndex = kartu.length - kartuPerView; // Batas maksimum index
+  currentIndex += direction;
+
+  // Cegah index keluar dari batas
+  if (currentIndex < 0) {
+      currentIndex = 0;
+  } else if (currentIndex > maxIndex) {
+      currentIndex = maxIndex;
+  }
+
+  const offset = -currentIndex * (kartuWidth + 20); // 20 adalah gap antar kartu
+  kartuContainer.style.transform = `translateX(${offset}px)`;
+}
+</script>
+
+ 
+<!-- JavaScript for all three sections -->
+<script>
+  // First toggle button
+  document.getElementById('toggleBtn1').addEventListener('click', function() {
+    let cardSection1 = document.getElementById('cardSection1');
+    if (cardSection1.classList.contains('show')) {
+      cardSection1.classList.remove('show');
+    } else {
+      cardSection1.classList.add('show');
+    }
+  });
+
+  // Second toggle button
+  document.getElementById('toggleBtn2').addEventListener('click', function() {
+    let cardSection2 = document.getElementById('cardSection2');
+    if (cardSection2.classList.contains('show')) {
+      cardSection2.classList.remove('show');
+    } else {
+      cardSection2.classList.add('show');
+    }
+  });
+
+  // Third toggle button
+  document.getElementById('toggleBtn3').addEventListener('click', function() {
+    let cardSection3 = document.getElementById('cardSection3');
+    if (cardSection3.classList.contains('show')) {
+      cardSection3.classList.remove('show');
+    } else {
+      cardSection3.classList.add('show');
+    }
+  });
+</script>
+    
+<!-- Button MENU -->
+    <script>
+    document.querySelectorAll('.myAnimatedButton').forEach(button => {
+      button.addEventListener('click', function() {
+        // Toggle the 'active' class on button click
+        this.classList.toggle('active');
+        
+        // Find the SVG inside the button
+        const svgIcon = this.querySelector('svg');
+    
+        // Check if the current SVG icon is 'bi-bag-fill' and toggle to 'bi-bag-check-fill'
+        if (svgIcon.classList.contains('bi-bag-fill')) {
+          svgIcon.innerHTML = `
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+          `;
+          svgIcon.classList.remove('bi-bag-fill');
+          svgIcon.classList.add('bi-bag-check-fill');
+        } else {
+          // Optionally, toggle back to 'bi-bag-fill' if it's already 'bi-bag-check-fill'
+          svgIcon.innerHTML = `
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+          `;
+          svgIcon.classList.remove('bi-bag-check-fill');
+          svgIcon.classList.add('bi-bag-fill');
+        }
+      });
+    });
+    
+  </script>
+
+<!-- read more and less -->
+<script>
+         document.getElementById('readMoreLinkMale').addEventListener('click', function (event) {
+            event.preventDefault();
+            var moreText = document.getElementById('moreTextMale');
+            var linkText = document.getElementById('readMoreLinkMale');
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                linkText.innerText = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                linkText.innerText = "Read More";
+            }
+        });
+
+        document.getElementById('readMoreLinkFemale').addEventListener('click', function (event) {
+            event.preventDefault();
+            var moreText = document.getElementById('moreTextFemale');
+            var linkText = document.getElementById('readMoreLinkFemale');
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                linkText.innerText = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                linkText.innerText = "Read More";
+            }
+        });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Map Initialization Script -->
+    <script>
+      function initMap() {
+        var location = { lat: -34.397, lng: 150.644 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8,
+          center: location,
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+
+      // Ensure the map is initialized when the API loads
+      window.onload = function () {
+        if (typeof google !== "undefined") {
+          initMap();
+        }
+      };
+    </script>
+
+    <!-- AOS Initialization -->
+    <script>
+      AOS.init();
+      window.addEventListener("load", () => {
+        AOS.refresh();
+      });
+    </script>
+
+    <!-- Navbar and ScrollSpy Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        function onScroll() {
+          let currentSection = " ";
+
+          // Loop through each section to determine the one currently in view
+          document.querySelectorAll("section").forEach((section) => {
+            const sectionTop = section.offsetTop - 60; // Adjust based on navbar height
+            if (window.scrollY >= sectionTop) {
+              currentSection = section.getAttribute("id");
+            }
+          });
+
+          // Remove active class from all nav-links and add to the current one
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${currentSection}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+
+        // Listen for scroll events
+        window.addEventListener("scroll", onScroll);
+
+        // Initialize Bootstrap's ScrollSpy with correct offset
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+          target: "#navbar",
+          offset: 60, // Adjusted for navbar height
+        });
+      });
+    </script>
+
+    <script>
+      function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script>
+
+    <!-- External Libraries (Ensure No Duplicates) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JAWA.js"></script>
+  </body>
+</html>
